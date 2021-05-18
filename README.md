@@ -1,5 +1,6 @@
 # Soundcloud-Scraper
 Pull Artists From SoundCloud!
+![](https://github.com/jarrettdev/Soundcloud-Scraper/blob/main/resources/soundcloud_data.gif)
 
 # Install
 
