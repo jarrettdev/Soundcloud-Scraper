@@ -18,7 +18,7 @@ class SoundcloudScraper(scrapy.Spider):
     ARTIST_NAME = 'bigsean-1'
     MIN_FOLLOWERS = 300
     MIN_TRACK_COUNT = 3
-    MIN_FOLLOWERS_TO_FOLLOWING = .80
+    MIN_FOLLOWING_TO_FOLLOWERS = .80
 
     client_id = ''
     step = ''
@@ -179,7 +179,7 @@ class SoundcloudScraper(scrapy.Spider):
                 user_track_count = user['track_count']
                 if int(user_followers) >= self.MIN_FOLLOWERS and int(user_track_count) >= self.MIN_TRACK_COUNT:
                     follower_ratio = float(user_following)/float(user_followers)
-                    if follower_ratio <= self.MIN_FOLLOWERS_TO_FOLLOWING:
+                    if follower_ratio <= self.MIN_FOLLOWING_TO_FOLLOWERS:
                         user_link = user['permalink_url']
                         user_name = user['username']
                         user_location = user['city'].strip()
