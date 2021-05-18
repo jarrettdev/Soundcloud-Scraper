@@ -19,7 +19,7 @@ pip install -r requirements.txt
 3. Choose an artist to start the scraper from. All the artists in the CSV will be somewhat related to the artist you choose.
 4. Modifiy the ARTIST_NAME variable inside relative_artist_scraper.py.
 5. Change the filter variables to narrow down your scrape (MIN_FOLLOWERS, MIN_TRACK_COUNT, and MIN_FOLLOWING_TO_FOLLOWERS).
-6. Run the following commands on after the other : 
+6. Run the following commands one after the other : 
     - python relative_artist_scraper.py 1 (stop this command manually or it will keep pulling links)
     - python relative_artist_scraper.py 2
     - python relative_artist_scraper.py 3
